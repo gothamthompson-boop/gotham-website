@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Gotham Junior</title>
 
   <style>
@@ -14,54 +15,89 @@
     }
 
     body {
-      background: #0b0b0b;
+      background: #080808;
       color: white;
-      text-align: center;
+      min-height: 100vh;
     }
 
     header {
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #111, #222);
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
     }
 
-    h1 {
-      font-size: 42px;
+    header h1 {
+      font-size: 30px;
       letter-spacing: 3px;
     }
 
     header p {
-      margin-top: 12px;
-      color: #ccc;
+      color: #aaa;
+      margin-top: 8px;
     }
 
-    section {
-      padding: 40px 20px;
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
     }
 
-    .card {
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 25px;
-      background: #151515;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.08);
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: #d4af37;
+    }
+
+    .hero p {
+      color: #bbb;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 30px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
       padding: 13px 25px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
+      margin: 7px;
       border-radius: 30px;
+      text-decoration: none;
       font-weight: bold;
     }
 
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #ccc;
+      line-height: 1.8;
+    }
+
     footer {
-      padding: 25px;
-      color: #888;
-      font-size: 14px;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      color: #777;
     }
   </style>
 </head>
@@ -69,22 +105,36 @@
 <body>
 
   <header>
-    <h1>GOTHAM JUNIOR</h1>
-    <p>Welcome to my official website</p>
+    <h1>GOTHAM</h1>
+    <p>Junior • Digital Space</p>
   </header>
 
-  <section>
-    <div class="card">
-      <h2>About Me</h2>
-      <p style="margin-top:15px;">
-        Welcome to my personal space.  
-        Here you can connect with me and discover more about my world.
-      </p>
+  <section class="hero">
+    <h2>Welcome to <span>Gotham</span></h2>
 
-      <a class="btn" href="https://wa.me/255723518756">
-        Chat with me on WhatsApp
+    <p>
+      Private life. Silent moves. Big vision.
+      Welcome to my official digital space.
+    </p>
+
+    <div class="buttons">
+      <a class="btn whatsapp"
+         href="https://wa.me/255723518756"
+         target="_blank">
+         Chat on WhatsApp
       </a>
     </div>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+
+    <p>
+      My name is Gotham Junior.
+      This website represents my personal brand,
+      ideas, digital projects and journey.
+      Stay focused, move silently and let the results speak.
+    </p>
   </section>
 
   <footer>
